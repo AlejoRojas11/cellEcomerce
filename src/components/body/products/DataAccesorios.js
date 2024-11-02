@@ -2,20 +2,7 @@
 
 
 export default [
-        {
-          "id": 11,
-          "nombre": "Mi Band 6",
-          "imagen": "https://xiaomicolombia.co/wp-content/uploads/2021/08/xiaomi_mi_smart_band_6_01_l-510x510.jpg",
-          "descripcion": "Mi Band 6 es la última pulsera de actividad física de Xiaomi, con pantalla AMOLED de 1.56 pulgadas, monitorización de la frecuencia cardíaca, seguimiento del sueño y resistencia al agua.",
-          "precio": 142999
-        },
-        {
-          "id": 12,
-          "nombre": "Xiaomi Mi True Wireless Earbuds",
-          "imagen": "https://xiaomiibague.co/wp-content/uploads/2021/03/AIRDOTS-510x510.jpg",
-          "descripcion": "Los auriculares inalámbricos Xiaomi Mi True ofrecen un sonido de alta calidad con un diseño elegante y ergonómico. Tienen una duración de la batería de hasta 5 horas con una sola carga y vienen con un estuche de carga.",
-          "precio": 199999
-        },
+        
         {
           "id": 13,
           "nombre": "Xiaomi Mi Power Bank 3 Pro",

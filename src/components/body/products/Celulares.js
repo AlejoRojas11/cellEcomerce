@@ -1,18 +1,10 @@
 import { React, useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { CartContext } from '../../carrito/CartContext';
-import { useAuth0 } from "@auth0/auth0-react";
 import Swal from 'sweetalert2/dist/sweetalert2.js';
 
-
-
 function Celulares(props) {
-  const { user, isAuthenticated, loginWithRedirect, logout } = useAuth0();
-  const { addToCart } = useContext(CartContext); // Extract addToCart function
-  const handleLogin = () => {
-    loginWithRedirect();
-  };
-
+  const { addToCart } = useContext(CartContext);
 
   const Toast = Swal.mixin({
     toast: true,
@@ -25,60 +17,51 @@ function Celulares(props) {
       toast.onmouseleave = Swal.resumeTimer;
     }
   });
+
   const handleAddToCart = () => {
-    if (isAuthenticated) {
-      Toast.fire({
-        icon: "success",
-        title: `${props.item.nombre} fue añadido a tu carrito`
-      });
-      addToCart(props.item);
+    Toast.fire({
+      icon: "success",
+      title: `${props.item.nombre} fue añadido a tu carrito`
+    });
+    addToCart(props.item);
+  };
+
+  const handleRedirect = () => {
+    if (props.item.link) {
+      const confirmRedirect = window.confirm(`¿Estás seguro de que quieres ir a pagar por ${props.item.nombre}?`);
+      if (confirmRedirect) {
+        window.location.href = props.item.link;
+      }
     } else {
-      Swal.fire({
-        title: "Inicia sesión para comprar",
-        showDenyButton: true,
-        showCancelButton: false,
-        denyButtonColor: "#FF0000",
-        confirmButtonColor: "#157347",
-        confirmButtonText: "Iniciar Sesión",
-        denyButtonText: "Seguir viendo"
-      }).then((result) => {
-        if (result.isConfirmed) {
-          handleLogin();
-        }
-      });
+      console.error("El enlace para el pago no está definido.");
     }
   };
 
+  return (
+    <div className="card mb-2 text-center">
+      <img src={props.item.imagen} className="card-img-top" alt={props.item.nombre} />
+      <div className="card-body">
+        <h5 className="card-title">{props.item.nombre}</h5>
+        <p className="card-text">Precio: ${props.item.precio.toLocaleString('es-CO')} COP</p>
+        <Link to={`/celulares/${props.item.id}`} className="text-decoration-none">
+          <button type="button" className="btn btn-secondary">
+            Ver más
+          </button>
+        </Link>
 
-
-
-
-
-
-return (
-  <div className="card mb-2 text-center">
-    <img src={props.item.imagen} className="card-img-top" alt="celular" />
-    <div className="card-body">
-      <h5 className="card-title">{props.item.nombre}</h5>
-      <p className="card-text">Precio: ${props.item.precio} COP</p>
-      <Link to={`/celulares/${props.item.id}`} className="text-decoration-none">
-        <button type="button" className="btn btn-secondary">
-          Ver más
+        <button
+          type="button"
+          className="btn btn-primary m-2" // Cambié el color del botón
+          onClick={() => {
+            handleAddToCart(); // Añadir al carrito
+            handleRedirect(); // Llamar a la función de redirección
+          }}
+        >
+          Pagar
         </button>
-      </Link>
-
-
-
-      <button
-        type="button"
-        className="btn btn-success m-2"
-        onClick={handleAddToCart}
-      >
-        Añadir al carrito
-      </button>
+      </div>
     </div>
-  </div>
-);
+  );
 }
 
 export default Celulares;

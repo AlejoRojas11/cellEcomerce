@@ -8,6 +8,10 @@ import redminote12pro from './img/redminote12pro.png'
 import redminote11tproplus from './img/redminote11tpro.webp'
 import pocof4gt from './img/pocof4gt.png'
 import pocox4pro from './img/pocox4pro.png'
+import ip13 from './img/ip13.png'
+import ip14 from './img/ip14.png'
+import ip14pro from './img/ip14pro.png'
+import ip14promax from './img/ip14promax.png'
 
 export default [
     {
@@ -149,5 +153,97 @@ export default [
         "pantalla": "AMOLED DotDisplay de 6,67", 
         "descripcion": "El Poco X4 Pro 5G ofrece un rendimiento potente y una experiencia de usuario fluida. Con su pantalla AMOLED DotDisplay de 6,67 pulgadas y una tasa de refresco de 120 Hz, disfrutarás de una visualización inmersiva y fluida. Además, su cámara principal de 64MP te permite capturar fotos y videos de alta calidad. La batería de 5000 mAh te da la libertad de usar tu teléfono durante todo el día sin preocuparte por quedarte sin batería."
       },
-
+      {
+        "id": 11,
+        "nombre": "iPhone 13",
+        "marca": "Apple",
+        "imagen": ip13,
+        link: 'https://pdtrxi-dr.myshopify.com/products/iphone-13', // Enlace específico para el iPhone 13
+        "precio": 2199900, // Precio en pesos colombianos
+        "bateria": "3240 mAh",
+        "procesador": "A15 Bionic chip",
+        "almacenamiento": "128 GB",
+        "ram": "4 GB",
+        "pantalla": "Super Retina XDR de 6,1 pulgadas",
+        "descripcion": "El iPhone 13 combina potencia y estilo con su chip A15 Bionic, que permite un rendimiento ágil y eficiente. Su pantalla Super Retina XDR de 6,1 pulgadas ofrece una calidad de imagen brillante y colores precisos. Con su sistema de cámara dual de 12 MP, podrás capturar fotos y videos nítidos y detallados, incluso con poca luz. Además, su batería de 3240 mAh asegura un día completo de uso sin preocupaciones."
+    },
+    {
+      id: 12,
+      nombre: "iPhone 14",
+      marca: "Apple",
+      imagen:ip14, // Cambia a la ruta de la imagen correspondiente
+      link: 'https://tu-tienda-shopify.com/pagar/iphone-14',
+      colores: {
+        blanco: 'ruta/a/imagen/ip14-blanco.jpg',
+        negro: 'ruta/a/imagen/ip14-negro.jpg',
+        azul: 'ruta/a/imagen/ip14-azul.jpg',
+      },
+      precio: 3999900, // Precio en pesos colombianos
+      bateria: "3279 mAh",
+      procesador: "A15 Bionic chip",
+      almacenamiento: "128 GB",
+      ram: "6 GB",
+      pantalla: "Super Retina XDR de 6,1 pulgadas",
+      descripcion: "El iPhone 14 ofrece una mejora en la duración de la batería y un rendimiento aún más potente con el chip A15. Su sistema de cámara permite capturas impresionantes, incluso en condiciones de poca luz."
+    },
+    {
+      id: 13,
+      nombre:  "iPhone 14 Pro",
+      marca: "Apple",
+      imagen: ip14pro, // Cambia a la ruta de la imagen correspondiente
+      link: 'https://tu-tienda-shopify.com/pagar/iphone-14-pro',
+      colores: {
+        dorado: 'ruta/a/imagen/ip14pro-dorado.jpg',
+        plateado: 'ruta/a/imagen/ip14pro-plateado.jpg',
+        grafito: 'ruta/a/imagen/ip14pro-grafito.jpg',
+        morado: 'ruta/a/imagen/ip14pro-morado.jpg',
+      },
+      precio: 4999900, // Precio en pesos colombianos
+      bateria: "3200 mAh",
+      procesador: "A16 Bionic chip",
+      almacenamiento: "128 GB",
+      ram: "6 GB",
+      pantalla: "Super Retina XDR de 6,1 pulgadas con ProMotion",
+      descripcion: "El iPhone 14 Pro lleva la potencia a otro nivel con el nuevo chip A16 Bionic y una pantalla que admite ProMotion para una experiencia visual más fluida."
+    },
+    {
+      id: 14,
+      nombre: "iPhone 14 Pro Max",
+      marca: "Apple",
+      imagen:ip14promax, // Cambia a la ruta de la imagen correspondiente
+      link: 'https://tu-tienda-shopify.com/pagar/iphone-14-pro-max',
+      colores: {
+        dorado: 'ruta/a/imagen/ip14promax-dorado.jpg',
+        plateado: 'ruta/a/imagen/ip14promax-plateado.jpg',
+        grafito: 'ruta/a/imagen/ip14promax-grafito.jpg',
+        morado: 'ruta/a/imagen/ip14promax-morado.jpg',
+      },
+      precio: 5999900, // Precio en pesos colombianos
+      bateria: "4323 mAh",
+      procesador: "A16 Bionic chip",
+      almacenamiento: "128 GB",
+      ram: "6 GB",
+      pantalla: "Super Retina XDR de 6,7 pulgadas con ProMotion",
+      descripcion: "El iPhone 14 Pro Max es el más potente de la serie, con una pantalla más grande y una batería de larga duración, ideal para quienes buscan lo mejor en tecnología móvil."
+    }
+    
 ]
+/* {
+  id: 11,
+  nombre: "iPhone 13",
+  marca: "Apple",
+  imagen: ip13,
+  link: 'https://tu-tienda-shopify.com/pagar/iphone-13', // Enlace específico para el iPhone 13
+  colores: {
+    blanco: ip13,
+    negro: 'https://mac-center.com/cdn/shop/files/IMG-12496118_3c704ca8-7be7-4ad4-957e-ff1f9f0f0b59.jpg?v=1723751033&width=823',
+    azul: 'https://mac-center.com/cdn/shop/files/IMG-12496108_db7a0408-f7d1-4cf8-a283-14e2d338010e.jpg?v=1723752865&width=823',
+  },
+  precio: 3599900, // Precio en pesos colombianos
+  bateria: "3240 mAh",
+  procesador: "A15 Bionic chip",
+  almacenamiento: "128 GB",
+  ram: "4 GB",
+  pantalla: "Super Retina XDR de 6,1 pulgadas",
+  descripcion: "El iPhone 13 combina potencia y estilo con su chip A15 Bionic, que permite un rendimiento ágil y eficiente. Su pantalla Super Retina XDR de 6,1 pulgadas ofrece una calidad de imagen brillante y colores precisos. Con su sistema de cámara dual de 12 MP, podrás capturar fotos y videos nítidos y detallados, incluso con poca luz. Además, su batería de 3240 mAh asegura un día completo de uso sin preocupaciones."
+} */

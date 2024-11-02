@@ -98,12 +98,12 @@ function Navbar() {
                 <LoginButton />
               </div>
             )}
-            <div className="iconoCarrito" title="Carrito de compras">
+            {/* <div className="iconoCarrito" title="Carrito de compras">
               <Link className="nav-link" to="/carrito">
                 <FontAwesomeIcon icon={faCartShopping} />
                 <CartCounter count={cart.length} />
               </Link>
-            </div>
+            </div> */}
           </div>
         </div>
       </nav>

@@ -33,7 +33,6 @@ function Footer() {
           <hr className='mb-4' />
           <p className='text-center'>Todos los derechos reservados a {" "}
             <a href='#'>
-                <strong className='text-black navbar-brand'>Alejandro Developer</strong>
             </a>
           </p>
         </div>

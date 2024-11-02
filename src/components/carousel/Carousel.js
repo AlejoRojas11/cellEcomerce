@@ -3,6 +3,10 @@ import './Carousel.css';
 import poco from './img/poco.png'
 import redmi from './img/redmi.png'
 import mi from './img/mi.png'
+import blackd from './img/BlackD.jpg'
+import blackd2 from './img/BlackD2.jpg'
+import blackd3 from './img/blackD3.jpg'
+
 
 function Carousel() {
   return (
@@ -12,7 +16,7 @@ function Carousel() {
 
       
       <div className='container text-center  mt-2 mb-2 '>
-        <h1>Últimos lanzamientos</h1>
+        <h1>Black Day</h1>
       </div>
       <div id="demo" className="carousel slide mb-4 align-items-center" data-bs-ride="carousel">
         <div className="carousel-indicators">
@@ -22,24 +26,20 @@ function Carousel() {
         </div>
         <div className="carousel-inner position-relative" id='carousel'>
           <div className="carousel-item active" data-bs-interval="5000">
-            <img src={poco} alt="POCO X5 5G" className="d-block w-100"></img>
+            <img src={blackd3} alt="POCO X5 5G" className="d-block w-100"></img>
             <div className="carousel-caption d-flex flex-column justify-content-center" id='poco'>
-              <h4>Poco X5 5G</h4>
-              <p>Tener de todo, lo es todo</p>
+             
             </div>
           </div>
           <div className="carousel-item" data-bs-interval="5000">
-            <img src={mi} alt="Xioami 13T" className="d-block w-100" />
+            <img src={blackd2} alt="Xioami 13T" className="d-block w-90" />
             <div className="carousel-caption d-flex flex-column justify-content-center" id='xiaomi'>
-              <h4>XIAOMI 13T</h4>
-              <p>La esencia de tu obra maestra</p>
+             
             </div>
           </div>
           <div className="carousel-item" data-bs-interval="5000">
-            <img src={redmi} alt="Redmi Note 13 pro+ 5g" className="d-block w-100" />
+            <img src={blackd} alt="" className="d-block w-90" />
             <div className="carousel-caption d-flex flex-column justify-content-center" id='redmi'>
-              <h4>Redmi Note 13 pro+ 5g</h4>
-              <p>Unas fotografías de otro mundo</p>
             </div>
           </div>
         </div>

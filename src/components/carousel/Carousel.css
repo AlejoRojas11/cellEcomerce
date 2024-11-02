@@ -9,9 +9,17 @@
   flex-flow: row wrap;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
   border-radius: 9px;
-margin-top: 7rem;
-background-color: white;
+  margin-top: 7rem;
+  background-color: white;
+  overflow: hidden; /* Evita que se salgan las imágenes */
 }
+
+.divCarousel img {
+  width: 100%; /* Asegura que las imágenes ocupen todo el ancho del contenedor */
+  height: 100%; /* Asegura que las imágenes ocupen todo el alto del contenedor */
+  object-fit: cover; /* Ajusta la imagen para cubrir el contenedor sin deformarse */
+}
+
 
 #poco {
   position: absolute;
@@ -59,10 +67,10 @@ background-color: white;
 #redmi {
   position: absolute;
   top: 50%;
-  left: 75%;
+  left: 55%;
   transform: translate(-50%, -50%);
-  text-align: center;
-  width: 80% !important;
+  width: 40% !important;
+  height: auto;
 
 
   h4 {
