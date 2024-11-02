@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Gujarati:wght@100..800&family=Secular+One&display=swap');
+
+body {
+    background: -webkit-linear-gradient(left, #ffffff, #ff9736);
+}
+
+.contact-form {
+    background: #fff;
+    margin-top: 10%;
+    margin-bottom: 5%;
+    width: 70%;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+    border-radius: 9px;
+    position: relative;
+}
+
+.contact-form .form-control {
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+}
+
+.contact-image {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -3%;
+}
+
+.contact-image img {
+    width: 100%;
+
+
+}
+
+.contact-form form {
+    padding: 14%;
+}
+
+.contact-form form .row {
+    margin-bottom: -7%;
+}
+
+.contact-form h3 {
+    font-family: "Anek Gujarati", sans-serif;
+    margin-bottom: 8%;
+    margin-top: -10%;
+    text-align: center;
+    color: #ff7d00;
+    font-size: 2rem;
+}
+
+@media (max-width: 767px) {
+    .contact-form {
+        margin-top: 7rem;
+    }
+    .contact-form h3{
+        margin-top: 0px;
+    }
+}
+
+.circulo {
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    border: 3px solid white;
+    background-color: white;
+}
+
+.btn-custom{
+   background-color: #ff7d00 !important;
+   border: #ff7d00 !important;
+   transition: background-color 0.3s ease, transform 0.3s ease;
+   color: white !important;
+}
+
+.btn-custom:hover {
+  background-color: #e07100 !important;
+  transform: scale(1.1);
+
+}

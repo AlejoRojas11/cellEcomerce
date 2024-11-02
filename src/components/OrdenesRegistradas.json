@@ -1,0 +1,50 @@
+[
+    {
+        "id": 1,
+        "nombre": "Alejandro Martínez",
+        "correo": "tortugal2004@gmail.com",
+        "pais": "Colombia",
+        "ciudad": "Colombia",
+        "direccion": "Centro",
+        "telefono": "3046530494",
+        "tarjeta": "1234567890123456",
+        "codigo": "123",
+        "fechaVencimiento": "06/12",
+        "total": 1149900,
+        "estado": "Activo",
+        "productos": "Xiaomi 12 Lite",
+        "fecha_creación": "2024-05-08T02:41:53.662Z"
+    },
+    {
+        "id": 2,
+        "nombre": "Alejandro Martínez",
+        "correo": "tortugal2004@gmail.com",
+        "pais": "Colombia",
+        "ciudad": "Colombia",
+        "direccion": "Centro ",
+        "telefono": "3046530494",
+        "tarjeta": "1234567890123456",
+        "codigo": "123",
+        "fechaVencimiento": "01/01",
+        "total": 3349800,
+        "estado": "Activo",
+        "productos": "Xiaomi 12 Lite, POCO X5 5G",
+        "fecha_creación": "2024-05-08T18:06:44.617Z"
+    },
+    {
+        "id": 3,
+        "nombre": "Alejandro Martínez",
+        "correo": "tortugal2004@gmail.com",
+        "pais": "Colombia",
+        "ciudad": "Colombia",
+        "direccion": "Centro",
+        "telefono": "3046530494",
+        "tarjeta": "1234567890123456",
+        "codigo": "123",
+        "fechaVencimiento": "01/10",
+        "total": 199999,
+        "estado": "Activo",
+        "productos": "Xiaomi Mi True Wireless Earbuds",
+        "fecha_creación": "2024-05-08T19:02:03.580Z"
+    }
+]
