@@ -28,10 +28,21 @@ function Celulares(props) {
 
   const handleRedirect = () => {
     if (props.item.link) {
-      const confirmRedirect = window.confirm(`¿Estás seguro de que quieres ir a pagar por ${props.item.nombre}?`);
-      if (confirmRedirect) {
-        window.location.href = props.item.link;
-      }
+      // Usamos SweetAlert2 para mostrar la ventana de confirmación
+      Swal.fire({
+        title: `¿Estás seguro de que quieres ir a pagar ${props.item.nombre}?`,
+        icon: 'question',
+        showCancelButton: true,
+        confirmButtonText: 'Sí, ir a pagar',
+        cancelButtonText: 'No, regresar',
+        reverseButtons: true, // Cambiar el orden de los botones
+      }).then((result) => {
+        if (result.isConfirmed) {
+          window.location.href = props.item.link; // Redirigir al enlace de pago
+        } else {
+          console.log('El usuario canceló la acción');
+        }
+      });
     } else {
       console.error("El enlace para el pago no está definido.");
     }
@@ -42,6 +53,7 @@ function Celulares(props) {
       <img src={props.item.imagen} className="card-img-top" alt={props.item.nombre} />
       <div className="card-body">
         <h5 className="card-title">{props.item.nombre}</h5>
+        <h5 className="card-title">{props.item.almacenamiento}</h5>
         <p className="card-text">Precio: ${props.item.precio.toLocaleString('es-CO')} COP</p>
         <Link to={`/celulares/${props.item.id}`} className="text-decoration-none">
           <button type="button" className="btn btn-secondary">
@@ -51,7 +63,7 @@ function Celulares(props) {
 
         <button
           type="button"
-          className="btn btn-primary m-2" // Cambié el color del botón
+          className="btn btn-primary m-2"
           onClick={() => {
             handleAddToCart(); // Añadir al carrito
             handleRedirect(); // Llamar a la función de redirección
