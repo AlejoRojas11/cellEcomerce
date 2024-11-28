@@ -17,7 +17,7 @@ function Destacado() {
       <hr className='mb-4 container' />
       <div className='divSeccion'>
         <div className='container'>
-          <h2 className='text-center' id='h2Destacado'>Destacado en xiaomi...</h2>
+          <h2 className='text-center' id='h2Destacado'>DESTACADO EN EL MES DE NOVIENBRE</h2>
         </div>
         <div className='row'>
           {celularesDestacados}

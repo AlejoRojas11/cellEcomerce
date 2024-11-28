@@ -19,7 +19,7 @@ function Footer() {
           <div className='col-md-5 mx-auto mt-3'>
             <h5 className='text-uppercase mb-4 font-weight-bold text-dark'>Nosotros</h5>
             <hr className='mb-4' />
-            <p className='text-dark'>En MiShop, estamos comprometidos con la excelencia en tecnología móvil. Ofrecemos una amplia gama de smartphones Xiaomi y accesorios, garantizando calidad y satisfacción para nuestros clientes.</p>
+            <p className='text-dark'>En SuperCell, estamos comprometidos con la excelencia en tecnología móvil.</p>
           </div>
 
           
@@ -31,7 +31,7 @@ function Footer() {
             <p className='text-decoration-none'><a href='#' className='text-dark text-decoration-none text-black'><FontAwesomeIcon icon={faWhatsapp} />{" "}Whatsapp</a></p>
           </div>
           <hr className='mb-4' />
-          <p className='text-center'>Todos los derechos reservados a {" "}
+          <p className='text-center'>Todos los derechos reservados a  {"SuperCell "}
             <a href='#'>
             </a>
           </p>

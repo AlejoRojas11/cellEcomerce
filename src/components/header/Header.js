@@ -37,7 +37,7 @@ function Navbar() {
               <img src={mi} alt="Logo mi" className="logo-mi" />
               <img src={logo} alt="Logo de la empresa" className="logo-img" />
               <Link className="navbar-brand" to="/">
-                Mishop
+              SuperCell
               </Link>
             </div>
           </div>
@@ -87,23 +87,8 @@ function Navbar() {
             </ul>
             <div className="d-flex align-items-center me-auto"></div>
             
-            {isAuthenticated ? (
-              <React.Fragment>
-                <div className="iconoUser" title="Ingresar">
-                  <LogoutButton />
-                </div>
-              </React.Fragment>
-            ) : (
-              <div className="iconoUsuario" title="Ingresar">
-                <LoginButton />
-              </div>
-            )}
-            {/* <div className="iconoCarrito" title="Carrito de compras">
-              <Link className="nav-link" to="/carrito">
-                <FontAwesomeIcon icon={faCartShopping} />
-                <CartCounter count={cart.length} />
-              </Link>
-            </div> */}
+           
+            
           </div>
         </div>
       </nav>
